@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/29/HTTP首部之X-Frame-Options/index.html">
 <meta property="og:site_name" content="木兄博客">
 <meta property="og:description" content="这几天在阅读HTTP相关的书籍，先从简单的入手，先看别人推荐的《图解HTTP》。   看到HTTP首部的讲解，看到了一个首部名为X-Frame-Options，这个字段是响应首部字段，也就是说是在我们浏览器调试中显示的response headers里面显示的。   那么这个首部字段是做什么的呢?定义就不展示了直接贴上MDN的定义：  X-Frame-Options HTTP 响应头是用来给浏">
-<meta property="og:updated_time" content="2017-06-29T01:57:10.925Z">
+<meta property="og:updated_time" content="2017-06-29T02:05:43.981Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTTP首部之X-Frame-Options">
 <meta name="twitter:description" content="这几天在阅读HTTP相关的书籍，先从简单的入手，先看别人推荐的《图解HTTP》。   看到HTTP首部的讲解，看到了一个首部名为X-Frame-Options，这个字段是响应首部字段，也就是说是在我们浏览器调试中显示的response headers里面显示的。   那么这个首部字段是做什么的呢?定义就不展示了直接贴上MDN的定义：  X-Frame-Options HTTP 响应头是用来给浏">
@@ -345,7 +345,7 @@
 <p>  以下面的例子展示一下：（用了百度跟Google，嘿嘿）</p>
   <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">"https://www.baidu.com"</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"300px"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">"https://www.google.com"</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"200px"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>  代码运行<a href="https://jsfiddle.net/dazhizhemu/1z8cd9mg/" target="_blank" rel="external">jsfiddle</a></p>
-<p>  想起之前的新闻，乐视与优酷之间的因为盗链引发的官司，优酷状告乐视盗链，我看了下两家的网站都没有启用这个选项，不知道为什么，可能是为了分享视频方便？我觉得应该不是这个问题。<br>  去看了一下youtube的视频外链处理方式，首先播放页面是不允许盗链的，设置了X-Frame-Options同源可以引入。外站要引入视频是<a href="https://www.youtube.com/embed/0nhrzAUeOVo这种格式的，有上下文/embed/,这个网址的X-Frame-Options没有设置，可以在任何网站嵌入。" target="_blank" rel="external">https://www.youtube.com/embed/0nhrzAUeOVo这种格式的，有上下文/embed/,这个网址的X-Frame-Options没有设置，可以在任何网站嵌入。</a></p>
+<p>  想起之前的新闻，乐视与优酷之间的因为盗链引发的官司，优酷状告乐视盗链，我看了下两家的网站都没有启用这个选项，不知道为什么，可能是为了分享视频方便？我觉得应该不是这个问题。<br>  去看了一下youtube的视频外链处理方式，首先播放页面是不允许盗链的，设置了X-Frame-Options同源可以引入。外站要引入视频是 “<a href="https://www.youtube.com/embed/0nhrzAUeOVo" target="_blank" rel="external">https://www.youtube.com/embed/0nhrzAUeOVo</a>“ 这种格式的，有上下文/embed/,这个网址的X-Frame-Options没有设置，可以在任何网站嵌入。</p>
 <p>  所以说吧有些问题可能就不是单纯的从技术角度可以考虑或者理解的了，我真的不信优酷、乐视等网站不懂这些东西，可能有别的原因。</p>
 <p>  另外就是有了X-Frame-Options就能解决盗链问题了？这个没有研究，估计也有办法。哈哈。</p>
 

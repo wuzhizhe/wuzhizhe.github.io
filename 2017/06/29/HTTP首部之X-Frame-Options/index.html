@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/29/HTTP首部之X-Frame-Options/index.html">
 <meta property="og:site_name" content="木兄博客">
 <meta property="og:description" content="这几天在阅读HTTP相关的书籍，先从简单的入手，先看别人推荐的《图解HTTP》。   看到HTTP首部的讲解，看到了一个首部名为X-Frame-Options，这个字段是响应首部字段，也就是说是在我们浏览器调试中显示的response headers里面显示的。   那么这个首部字段是做什么的呢?定义就不展示了直接贴上MDN的定义：  X-Frame-Options HTTP 响应头是用来给浏">
-<meta property="og:updated_time" content="2017-06-29T02:07:10.128Z">
+<meta property="og:updated_time" content="2017-06-29T02:38:49.558Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTTP首部之X-Frame-Options">
 <meta name="twitter:description" content="这几天在阅读HTTP相关的书籍，先从简单的入手，先看别人推荐的《图解HTTP》。   看到HTTP首部的讲解，看到了一个首部名为X-Frame-Options，这个字段是响应首部字段，也就是说是在我们浏览器调试中显示的response headers里面显示的。   那么这个首部字段是做什么的呢?定义就不展示了直接贴上MDN的定义：  X-Frame-Options HTTP 响应头是用来给浏">
@@ -349,6 +349,7 @@
 <p>  所以说吧有些问题可能就不是单纯的从技术角度可以考虑或者理解的了，我真的不信优酷、乐视等网站不懂这些东西，可能有别的原因。</p>
 <p>  另外就是有了X-Frame-Options就能解决盗链问题了？</p>
 <p>  找到了chrome extension的一个工具可以解决这个不准盗链的问题，这个扩展直接把返回的请求头里面的X-Frame-options给移除了，哈哈哈，不过这个是利用工具了，也就是浏览器行为了，不是网站可以处理的。</p>
+<p>  忘了写Nginx如何添加X-Frame-Options支持了，在server里：add_header X-Frame-Options “SAMEORIGIN”;<br>  其他的Apache IIS等在 <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options" target="_blank" rel="external">MDN网址</a> 上有相关说明。</p>
 
       
     </div>

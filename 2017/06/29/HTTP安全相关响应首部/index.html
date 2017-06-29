@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/29/HTTP安全相关响应首部/index.html">
 <meta property="og:site_name" content="木兄博客">
 <meta property="og:description" content="上一篇文章记录了一下X-Frame-Options响应首部，这次记录下其他的与HTTP安全相关的首部字段与信息。 X-XSS-Protection  X-XSS-Protection MDN解释  HTTP X-XSS-Protection 响应头是Internet Explorer，Chrome和Safari的一个功能，当检测到跨站脚本攻击 (XSS)时，浏览器将停止加载页面。虽然这些保护在">
-<meta property="og:updated_time" content="2017-06-29T05:45:22.132Z">
+<meta property="og:updated_time" content="2017-06-29T09:03:12.909Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTTP安全相关响应首部">
 <meta name="twitter:description" content="上一篇文章记录了一下X-Frame-Options响应首部，这次记录下其他的与HTTP安全相关的首部字段与信息。 X-XSS-Protection  X-XSS-Protection MDN解释  HTTP X-XSS-Protection 响应头是Internet Explorer，Chrome和Safari的一个功能，当检测到跨站脚本攻击 (XSS)时，浏览器将停止加载页面。虽然这些保护在">
@@ -361,8 +361,8 @@
 </blockquote>
 <p>  max-age设置过期时间，单位是秒，includeSubdomains是是否包含过子域名的意思。</p>
 <p>  Nginx配置: add_header Strict-Transport-Security “max-age=31536000; includeSubDomains” always;</p>
-<h3 id="Content-Security-Policy"><a href="#Content-Security-Policy" class="headerlink" title="Content-Security-Policy"></a>Content-Security-Policy</h3><p>  内容有点多，暂时没学习完，先记录网址。到时候单独开一篇介绍。</p>
-<p>  <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Security-Policy__by_cnvoid" target="_blank" rel="external">Content-Security-Policy MDN解释</a></p>
+<h3 id="Content-Security-Policy"><a href="#Content-Security-Policy" class="headerlink" title="Content-Security-Policy"></a>Content-Security-Policy</h3><p>  这个叫“内容安全政策”，最终设置的东西也会展示在Response Header里，内容比较多，建议直接上MDN学习，给出的很详细，网址如下:</p>
+<p>  <a href="https://developer.mozilla.org/zh-CN/docs/Web/Security/CSP/Using_Content_Security_Policy" target="_blank" rel="external">Content-Security-Policy MDN解释</a></p>
 
       
     </div>
